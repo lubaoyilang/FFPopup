@@ -5,8 +5,8 @@ matrix:
       before_script: 
         - gem install awesome_bot
       script:
-        - wl=/Resources/ffpopup-logo.png,/Resources/..,./CONTRIBUTING.md,/LICENSE,https://opencollective.com/ffpopup/sponsor/..
-        - awesome_bot README.md --allow-ssl --allow-dupe --allow-redirect --base-url "$TRAVIS_BUILD_DIR" --white-list $wl
+        - wl=/Resources/..,./CONTRIBUTING.md,/LICENSE,https://opencollective.com/ffpopup/sponsor/..
+        - awesome_bot README.md --allow-ssl --allow-dupe --allow-redirect --white-list $wl
 
     - language: objective-c
       osx_image: xcode10.1
