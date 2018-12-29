@@ -2,7 +2,8 @@ matrix:
   include:
     - language: ruby
       rvm: 2.2
-      brfore_script: gem install awesome_bot
+      brfore_script: 
+        - gem install awesome_bot
       script:
         - awesome_bot README.md --allow-ssl --allow-dupe --allow-redirect --base-url "$TRAVIS_BUILD_DIR"
 
